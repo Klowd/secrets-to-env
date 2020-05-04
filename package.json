@@ -1,26 +1,27 @@
 {
-  "name": "@klowd/secretsmanager-env-js",
-  "version": "1.0.0",
+  "name": "@klowd/secrets-to-env",
+  "version": "1.0.2",
   "description": "A JavaScript module to get environment variables from AWS Secrets Manager and write to an .env file.",
-  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Klowd/secretsmanager-env-js.git"
+    "url": "git+https://github.com/Klowd/secrets-to-env.git"
   },
   "author": "AustinMaddox",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Klowd/secretsmanager-env-js/issues"
+    "url": "https://github.com/Klowd/secrets-to-env/issues"
   },
-  "homepage": "https://github.com/Klowd/secretsmanager-env-js#readme",
+  "homepage": "https://github.com/Klowd/secrets-to-env#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "aws-sdk": "^2.668.0",
+    "debug": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",

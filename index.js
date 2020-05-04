@@ -1,4 +1,9 @@
+#!/usr/bin/env node
+
+"use strict";
+
 const AWS = require("aws-sdk/global");
+const debug = require("debug");
 const fs = require("fs");
 const moment = require("moment");
 
@@ -32,10 +37,10 @@ const init = async () => {
     EnvString += "\n";
     fs.writeFile(".env", EnvString, { flag: "a" }, (err) => {
       if (err) throw err;
-      console.log("✅ The .env file has been written!");
+      debug("secrets-to-env:info")("✅ The .env file has been written!");
     });
   } catch (err) {
-    console.error(
+    debug("secrets-to-env:error")(
       "Refresh-Env#init():",
       "Initialization failed in the refresh-env.js script.",
       err.stack
