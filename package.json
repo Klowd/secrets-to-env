@@ -1,5 +1,5 @@
 {
-  "name": "secretsmanager-env-js",
+  "name": "@klowd/secretsmanager-env-js",
   "version": "1.0.0",
   "description": "A JavaScript module to get environment variables from AWS Secrets Manager and write to an .env file.",
   "main": "index.js",
@@ -16,6 +16,9 @@
     "url": "https://github.com/Klowd/secretsmanager-env-js/issues"
   },
   "homepage": "https://github.com/Klowd/secretsmanager-env-js#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "aws-sdk": "^2.668.0",
     "eslint": "^6.8.0",
