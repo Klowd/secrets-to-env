@@ -40,11 +40,7 @@ const init = async () => {
       debug("secrets-to-env:info")("✅ The .env file has been written!");
     });
   } catch (err) {
-    debug("secrets-to-env:error")(
-      "Refresh-Env#init():",
-      "Initialization failed in the refresh-env.js script.",
-      err.stack
-    );
+    debug("secrets-to-env:error")("Failed in the init() function:", err.stack);
   }
 };
 init();
